@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body,
+html {
+  min-height: 100%;
+  width: 100%;
+}
+
+.clear::after,
+.clear::before {
+  content: " ";
+  display: table;
+}
+
+.clear::after {
+  clear: both;
+}
+
+/* Main Styles */
+
+.container {
+  width: 600px;
+  height: 600px;
+  margin: 100px auto;
+  border: 1px solid;
+}
+
+.row {
+  height: 12.5%;
+  position: relative;
+}
+
+.square {
+  position: absolute;
+  width: 12.5%;
+  height: 100%;
+}
+
+.row:nth-child(odd) .square:nth-child(even) {
+  background-color: black;
+}
+.row:nth-child(even) .square:nth-child(odd) {
+  background-color: black;
+}
+
+.square:nth-child(2n) {
+  left: 12.5%;
+}
+
+.square:nth-child(3n) {
+  left: 25%;
+}
+.square:nth-child(4n) {
+  left: 37.5%;
+}
+.square:nth-child(5n) {
+  left: 50%;
+}
+.square:nth-child(6n) {
+  left: 62.5%;
+}
+.square:nth-child(7n) {
+  left: 75%;
+}
+
+.square:nth-child(8n) {
+  left: 87.5%;
+}
+
+.row:nth-child(1) .square:nth-child(even) {
+  background-image: url(../images/checkersW.png);
+  background-repeat: no-repeat;
+  background-size: 90% 90%;
+  background-position: center;
+}
+.row:nth-child(2) .square:nth-child(odd) {
+  background-image: url(../images/checkersW.png);
+  background-repeat: no-repeat;
+  background-size: 90% 90%;
+  background-position: center;
+}
+.row:nth-child(3) .square:nth-child(even) {
+  background-image: url(../images/checkersW.png);
+  background-repeat: no-repeat;
+  background-size: 90% 90%;
+  background-position: center;
+}
+.row:nth-child(6) .square:nth-child(odd) {
+  background-image: url(../images/checkersB.png);
+  background-repeat: no-repeat;
+  background-size: 90% 90%;
+  background-position: center;
+}
+.row:nth-child(7) .square:nth-child(even) {
+  background-image: url(../images/checkersB.png);
+  background-repeat: no-repeat;
+  background-size: 90% 90%;
+  background-position: center;
+}
+.row:nth-child(8) .square:nth-child(odd) {
+  background-image: url(../images/checkersB.png);
+  background-repeat: no-repeat;
+  background-size: 90% 90%;
+  background-position: center;
+}
